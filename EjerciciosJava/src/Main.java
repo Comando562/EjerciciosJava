@@ -21,5 +21,15 @@ public class Main {
         }
     }
 
+    public void Capicua(int number){
+        String numberText = String.valueOf(number);
+        String reverseNumber = new StringBuilder(numberText).reverse().toString();
+        if(numberText.equals(reverseNumber)){
+            System.out.println("Is capicua");
+        }else{
+            System.out.println("Not Capicua");
+        }
+    }
+
 
 }
