@@ -1,3 +1,7 @@
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -25,10 +29,17 @@ public class Main {
         String numberText = String.valueOf(number);
         String reverseNumber = new StringBuilder(numberText).reverse().toString();
         if(numberText.equals(reverseNumber)){
-            System.out.println("Is capicua");
+            System.out.println("Es capicua");
         }else{
-            System.out.println("Not Capicua");
+            System.out.println("No es Capicua");
         }
+    }
+
+    public void DesordenarTexto(String text){
+        String[] array = text.split("");
+        List<String> list = Arrays.asList(array);
+        Collections.shuffle(list);
+        list.forEach(System.out::println);
     }
 
 
