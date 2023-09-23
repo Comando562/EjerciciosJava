@@ -6,7 +6,7 @@ public class Main {
     public static void main(String[] args) {
 
         Main  app = new Main();
-        app.metodo("parametros");  //app.FizzBuzz();
+        app.metodo("parametro");  //app.FizzBuzz();
         //System.out.println(app.Palindromo("textoAEvaluar"));
     }
 
@@ -40,6 +40,17 @@ public class Main {
         List<String> list = Arrays.asList(array);
         Collections.shuffle(list);
         list.forEach(System.out::println);
+    }
+
+    public void Volteartexto(){
+        String palabra = "";
+        int i;
+
+        palabra ="Hola Mundo";
+        for(i = palabra.length()-1; i >= 0 ; i --){ //Recorrer el arrego de la O a la H | -1 por el indice
+            System.out.print(palabra.charAt(i)); // Todo se imprime en un mismo renglon
+        }
+        System.out.println("");
     }
 
 
