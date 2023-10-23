@@ -1,6 +1,7 @@
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -51,6 +52,20 @@ public class Main {
             System.out.print(palabra.charAt(i)); // Todo se imprime en un mismo renglon
         }
         System.out.println("");
+    }
+
+    public void Fibonacci(){
+        Scanner teclado = new Scanner(System.in);    //Scaner para ingresar datos
+        int a = 0, b = 1, c ,n;                             //a Se inicializa en 0
+        System.out.print("Por favor ingrese cantidad de elementos para la serie: ");  //Elementos que se van a calcular pedidos por el usuario
+        n = teclado.nextInt();    //Dato se ingresa por teclado y se alamacena en la vairable n
+        for (int i = 0; i < n; i++){//ciclo |1 varibale que se incializa en 0 | hasta cuando se va a repetir el ciclo | hasta que i sea menor que n | cuando se complan las dos anteriores se va incrementar en 1
+            System.out.print(a);
+            c = a + b;
+            a = b;
+            b = c; //b e sla suma de los dos digitos
+
+        }
     }
 
 
